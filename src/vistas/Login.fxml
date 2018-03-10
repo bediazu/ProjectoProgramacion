@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="anchorPanelPrincipal" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.LoginController">
+    <stylesheets>
+        <URL value="@/css/Inicio.css" />
+    </stylesheets>
+   <children>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="panelLogo" stylesheets="@../css/Inicio.css">
+         <children>
+            <ImageView fitHeight="253.0" fitWidth="264.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/logos/altamira-logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <Pane fx:id="panelLoginRegistro" layoutX="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0">
+         <children>
+            <ImageView fitHeight="98.0" fitWidth="105.0" layoutX="27.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@/logos/altamira-logo-gray.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="27.0" layoutY="143.0" text="Bienvenido," textFill="#545454">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="173.0" text="Inicio de sesion" textFill="#a3a3a3">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField focusColor="#3472b5" labelFloat="true" layoutX="46.0" layoutY="253.0" prefHeight="26.0" prefWidth="311.0" promptText="Usuario" unFocusColor="#242424">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField focusColor="#3472b5" labelFloat="true" layoutX="46.0" layoutY="317.0" prefHeight="26.0" prefWidth="311.0" promptText="Contraseña" unFocusColor="#242424">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton layoutX="201.0" layoutY="364.0" text="¿Olvido la contraseña?" textFill="#a3a3a3" />
+            <JFXButton buttonType="RAISED" layoutX="50.0" layoutY="443.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#login_usuario" prefHeight="50.0" prefWidth="300.0" styleClass="loginBtn" stylesheets="@../css/Inicio.css" text="Aceptar" />
+            <JFXButton fx:id="btnRegistro" layoutX="214.0" layoutY="509.0" onMouseClicked="#registro_usuario" text="Registrate" textFill="#242424">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="99.0" layoutY="512.0" text="¿Nuevo usuario?" textFill="#a3a3a3" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

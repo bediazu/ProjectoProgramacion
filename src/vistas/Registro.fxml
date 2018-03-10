@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="controladores.RegistroController">
+   <children>
+      <ImageView fitHeight="98.0" fitWidth="105.0" layoutX="160.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+         <image>
+            <Image url="@/logos/altamira-logo-gray.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="37.0" layoutY="153.0" text="Formulario de Registro" textFill="#545454">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="183.0" text="Registro de sesion" textFill="#a3a3a3">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField focusColor="#3472b5" labelFloat="true" layoutX="57.0" layoutY="235.0" prefHeight="26.0" prefWidth="311.0" promptText="Usuario" unFocusColor="#242424">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField focusColor="#3472b5" labelFloat="true" layoutX="57.0" layoutY="291.0" prefHeight="26.0" prefWidth="311.0" promptText="Correo" unFocusColor="#242424">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField focusColor="#3472b5" labelFloat="true" layoutX="57.0" layoutY="349.0" prefHeight="26.0" prefWidth="311.0" promptText="Contraseña" unFocusColor="#242424">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXPasswordField focusColor="#3472b5" labelFloat="true" layoutX="57.0" layoutY="408.0" prefHeight="26.0" prefWidth="311.0" promptText="Confirmar contraseña" unFocusColor="#242424">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton buttonType="RAISED" layoutX="62.0" layoutY="480.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="300.0" styleClass="loginBtn" stylesheets="@../css/Inicio.css" text="Aceptar" />
+      <JFXButton layoutX="14.0" layoutY="14.0" onMouseClicked="#volverLogin" styleClass="loginBtn" stylesheets="@../css/Inicio.css" text="Atras" />
+   </children>
+</AnchorPane>

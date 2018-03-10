@@ -1,0 +1,38 @@
+/*
+ * Archivo de estilo css para el login.
+ */
+
+.mainFxmlClass
+{
+    
+}
+
+.anchorPanelPrincipal
+{
+    -fx-background-color: white;
+}
+
+.panelLogo
+{
+    -fx-background-color: #3a3a3a;
+}
+
+.panelLogin
+{
+    -fx-background-color: white;
+}
+
+.loginBtn
+{
+    -fx-background-color: #3a3a3a;
+    -fx-border-style: solid;
+    -fx-text-fill: white;
+}
+
+.loginBtn:hover
+{
+    -fx-background-color: transparent;
+    -fx-border-style: solid;
+    -fx-border-color: #3472b5;
+    -fx-text-fill: black;
+}
